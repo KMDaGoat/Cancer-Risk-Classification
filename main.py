@@ -18,8 +18,6 @@ for z1 , z2 in zip(zvalues1 , zvalues2):
     print(f"Person {person}'s risk of cancer: {riskpercent}%")
 
 
-#set limits based on risk percentage amd combined z
-#make the graph look better
 plt.xlim(min(xpoints) , max(xpoints))
 ypad = 0.05 * max(ypoints)
 plt.ylim(0,max(ypoints) + ypad)
@@ -29,6 +27,7 @@ plt.title("Cancer risk Assessment")
 plt.ylabel("Predicted risk of Cancer")
 plt.xlabel("overall risk score of all features (clinical + environmental + symptomatic)")
 plt.show()
+
 
 
 
