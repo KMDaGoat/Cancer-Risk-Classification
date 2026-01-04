@@ -9,7 +9,7 @@ Simple Beginner Project
 
 -used different datasets to cover various amounts of different features such as clinical , environmental and symptomatic features
 
--used matplotlib to output the a graph the overall risk percentage in respect to the combined risk score
+-used matplotlib to output a graph of the overall risk percentage in respect to the combined risk score
 
 
 
