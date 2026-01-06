@@ -47,7 +47,7 @@ def firstdataset():
     lgr.fit(xtrain, ytrain)
 
     from sklearn.metrics import accuracy_score
-    accuracy = accuracy_score(ytest, lgr .predict(xtest))
+    accuracy = accuracy_score(ytest, lgr.predict(xtest))
     print(f"first dataset: {accuracy}")
 
     zvalues = []
@@ -55,5 +55,6 @@ def firstdataset():
         zvalues.append(zvalue)
 
     return zvalues
+
 
 
