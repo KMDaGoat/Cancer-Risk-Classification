@@ -4,7 +4,7 @@ import pandas as pd
 import numpy as np
 def seconddataset():
     dataset = pd.read_csv(r"C:\Users\aliff\Downloads\lungcancerdataset\cancer patient data sets.csv")
-    xval = dataset.drop(["index" , "Patient Id" , "Age" , "Gender" , "Alcohol use" , "Dust Allergy" , "Clubbing of Finger Nails" , "Frequent Cold" , "Dry Cough" , "Snoring" , "Level"] , axis = "columns")
+    xval = dataset.drop(["index" , "Patient Id" , "Gender" , "Alcohol use" , "Dust Allergy" , "Clubbing of Finger Nails" , "Frequent Cold" , "Dry Cough" , "Snoring" , "Level"] , axis = "columns")
     yval = dataset["Level"].map({'Low': 0, 'Medium': 1, 'High': 1})
 
     xval = xval.iloc[ : , : ]
@@ -37,6 +37,7 @@ def seconddataset():
         zvalues.append(zvalue)
 
     return zvalues
+
 
 
 
